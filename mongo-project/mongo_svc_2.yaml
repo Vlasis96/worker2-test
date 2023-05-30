@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: mongodb-sc
+  name: mongodb-sc
+  namespace: default
+  resourceVersion: "6055"
+  uid: a729ca9f-4edf-480f-bf9e-fe219f0ee729
+spec:
+  ports:
+  - port: 27017
+    protocol: TCP
+    targetPort: 27017
+  selector:
+    app: mongodb-sc
+  sessionAffinity: None
+  type: LoadBalancer
+status:
+  loadBalancer: {}

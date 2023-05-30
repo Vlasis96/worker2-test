@@ -1,0 +1,7 @@
+# This file is created by ibus-daemon, please do not modify it.
+# This file allows processes on the machine to find the
+# ibus session bus with the below address.
+# If the IBUS_ADDRESS environment variable is set, it will
+# be used rather than this file.
+IBUS_ADDRESS=unix:abstract=/home/vlasis/.cache/ibus/dbus-KwsQx7nO,guid=d3024f816788d04e753714ec6475bffd
+IBUS_DAEMON_PID=4153
