@@ -20,3 +20,10 @@ spec:
           ports:
             - containerPort: 8000
               name: gunicorn
+          volumeMounts:
+            - name: django-storage
+              mountPath: /app/static
+      volumes:
+        - name: django-storage
+          persistentVolumeClaim:
+            claimName: django-pvc  
