@@ -17,3 +17,11 @@ spec:
         image: vlasis/react-docker
         ports:
         - containerPort: 80
+        volumeMounts:
+          - name: app-storage
+            mountPath: /app/public
+      volumes:
+        - name: app-storage
+          persistentVolumeClaim:
+            claimName: react-app-pvc
+
